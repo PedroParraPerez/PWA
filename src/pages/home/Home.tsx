@@ -2,6 +2,7 @@ import { Form, Formik } from "formik";
 import "./home.css";
 import FormikField from "../../components/common/formik/FormikField";
 import { loginValidationSchema } from "../../constants/validationSchemas";
+import { ActionButton } from "../../components/common/actionButton";
 
 const Home = () => {
   return (
@@ -27,9 +28,7 @@ const Home = () => {
               placeHolder="••••••••"
             />
           </div>
-          <button type="submit" className="btn">
-            Entrar
-          </button>
+          <ActionButton label="Entrar" type="submit" />
           <div className="links">
             <p>¿Olvidaste tu contraseña?</p>
             <p>Regístrate</p>
