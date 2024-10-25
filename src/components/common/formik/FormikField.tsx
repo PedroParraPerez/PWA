@@ -1,6 +1,6 @@
 import { Field } from "formik";
 import { FormikFieldProps } from "../../../interfaces/formik";
-import "./formikField.css";
+
 
 interface Props {
   name: string;

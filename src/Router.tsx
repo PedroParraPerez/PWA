@@ -1,9 +1,11 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ApptToolbar from "./components/appToolbar/AppToolbar";
+
 const Router = () => {
-  // TODO Here we will implement the routing logic
   return (
     <BrowserRouter>
+      <ApptToolbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
